@@ -20,10 +20,8 @@ import {
 import { BasicModal } from 'components/BasicModal';
 
 export const LoginForm = () => {
-  const [showLoginForm, setShowLoginForm] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
 
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleSubmitForm = e => {
@@ -39,10 +37,6 @@ export const LoginForm = () => {
   };
 
   const handleClickShowPassword = () => setShowPassword(show => !show);
-
-  if (!showLoginForm) {
-    navigate('/');
-  }
 
   return (
     <BasicModal 
