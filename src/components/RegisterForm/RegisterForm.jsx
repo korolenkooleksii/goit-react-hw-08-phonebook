@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { register } from 'redux/auth/operations';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import {
@@ -20,8 +20,6 @@ import { BasicModal } from 'components/BasicModal';
 
 export const RegisterForm = () => {
   const [showPassword, setShowPassword] = useState(false);
-
-  const navigate = useNavigate();
 
   const dispatch = useDispatch();
 
