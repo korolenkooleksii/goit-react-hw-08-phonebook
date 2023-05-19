@@ -19,7 +19,7 @@ const boxAdd = {
 };
 
 export const AddContact = ({ handleClick }) => {
-  const [addContact, { isSuccess }] = useAddContactMutation();
+  const [addContact] = useAddContactMutation();
 
   const { data: contacts = [] } = useGetContactsQuery();
 

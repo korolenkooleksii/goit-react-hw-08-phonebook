@@ -28,7 +28,7 @@ export const ContactDetails = () => {
   } = useLocation();
   const { name, number, id } = from;
 
-  const [updateContact, { isSuccess }] = useUpdateContactMutation();
+  const [updateContact] = useUpdateContactMutation();
 
   const navigate = useNavigate();
   const closePage = () => navigate('/contacts');
