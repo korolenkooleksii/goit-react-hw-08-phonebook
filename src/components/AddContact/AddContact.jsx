@@ -41,11 +41,10 @@ export const AddContact = ({ handleClick }) => {
           })
         : await addContact({ name, number });
 
-      isSuccess &&
-        toast.success(`${name} contact has been added to the phonebook.`, {
-          theme: 'colored',
-          autoClose: 2000,
-        });
+      toast.success(`${name} contact has been added to the phonebook.`, {
+        theme: 'colored',
+        autoClose: 2000,
+      });
     } catch (error) {
       toast.error(`Error - ${error.message}`, {
         theme: 'colored',

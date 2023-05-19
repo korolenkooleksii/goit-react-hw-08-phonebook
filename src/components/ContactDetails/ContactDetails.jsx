@@ -49,9 +49,7 @@ export const ContactDetails = () => {
 
     try {
       await updateContact({ savedContact, id });
-
-      isSuccess &&
-        toast.success(`Contact ${name} updated.`, {
+      toast.success(`Contact ${name} updated.`, {
           theme: 'colored',
           autoClose: 2000,
         });

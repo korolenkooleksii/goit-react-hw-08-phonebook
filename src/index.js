@@ -45,33 +45,6 @@ const theme = createTheme({
   },
 });
 
-// const hhhhhh = createTheme({
-//   palette: {
-//     primary: {
-//       main: '#313131',
-//       // light: '#0066ff',
-//       // dark: '#ef6c00',
-//     },
-
-//     secondary: {
-//       main: '#0044ff',
-//       // light: '#0066ff',
-//       // dark: '#ef6c00',
-//       // contrastText: '#ffcc00',
-//     },
-
-//     custom: {
-//       light: '#ffa726',
-//       main: '#f57c00',
-//       dark: '#ef6c00',
-//       contrastText: 'rgba(0, 0, 0, 0.87)',
-//     },
-
-//     contrastThreshold: 3,
-
-//     tonalOffset: 0.2,
-//   },
-// });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
